@@ -1,0 +1,133 @@
+:root{
+    --text-hover: #6FABD0;
+    --bg-primary: #6FABD0;
+    --text-primary: #6FABD0;
+    --border-primary: 2px solid #6FABD0; 
+    --white: #f6f0f0;
+    --btn-hover: #8ccaf1;
+    --navbar-hover: #6fabd0;
+    --btn-hover-outline: var(--bg-primary);
+    --transition-slow: all 0.4s
+}
+.bg-primary{
+    background-color: var(--bg-primary);
+    color: var(--white);
+}
+.border-primary{
+    border: var(--border-primary);
+}
+.btn-hover:hover{
+background-color: var(--btn-hover);
+transition: var(--transition-slow);
+}
+.btn-hover-o:hover{
+    color: var(--btn-hover-outline);
+    background-color: var(--btn-hover);
+}
+.navbar-hover:hover{
+    background-color: var(--navbar-hover);
+}
+.text-primary{
+    color: var(--text-primary);
+}
+.text-hover:hover{
+    color: var(--text-hover);
+}
+/* @media (min-width: 767px) { */
+.about-navbar{
+    left: 3% !important;
+}
+.service-navbar{
+    left: 4.1% !important;
+}
+.offer-navbar{
+    left: 1.9% !important;
+}
+.hd-navbar{
+    left: 2.5% !important;
+}
+/* } */
+
+.dropdown-container{
+    position: absolute;
+    top: 0;  
+    margin-top: -0.57rem !important;
+    color: var(--white) !important;
+    background-color: var(--navbar-hover);
+}
+
+.transform {
+    transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}
+
+/* Cursor */
+.typed-cursor {
+    display: none;
+}
+
+ 
+.bar1{
+    width: 50%;
+    height: 2px;
+    border-radius: 0.25rem;
+    background-color: white;
+    transition: 300ms;
+    transition-delay: 75ms;
+    }
+
+    .bar2{
+    border-radius: 0.25rem;
+    height: 1px;
+    background-color: white;
+    }
+
+    .bar3{
+        width: 50%;
+        height: 2px;
+        border-radius: 0.25rem;
+        background-color: white;
+        transition: 300ms;
+        align-self: flex-end;
+        transition-delay: 75ms;
+    }
+    .change .bar1 {
+    transform: translate(-50px, 28px) rotate(140deg);
+    transform-origin: right;
+    height: 2px;
+    width: 100%;
+    }
+    
+    .change .bar2 {
+    opacity: 0;
+    }
+    
+    .change .bar3 {
+    transform: translate(20px, -10px) rotate(-140deg);
+    transform-origin: left;
+    height: 2px;
+    width: 100%;
+    } 
+
+    .video-container{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    direction: ltr;
+}
+
+.arrow-right{
+    transform: scaleX(-1);
+}
+
+.circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
