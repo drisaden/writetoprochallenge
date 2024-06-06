@@ -290,7 +290,7 @@ People are now willing to pay for your <b>handcraft</b> more than ever.
                     </section>
 
                     <section class="px-5 mt-10 text-xl">
-                        <p class="text-left py-5 leading-relaxed tracking-wider font-bold italic pop-font uppercase"><span class="text-red-700">PS: </span> BECAUSE THIS CHALLENGE IS ONE-ON-ONE. I WON'T BE ADMITTING MANY people to avoid getting fatigue and losing focus. So, i will open the slots for this next<span class="text-red-700"> 40 mins</span> . Then, it will be closed indefinitely. Get in now, if you don't want to miss out.
+                        <p class="text-left py-5 leading-relaxed tracking-wider font-bold italic pop-font uppercase counter3"><span class="text-red-700">PS: </span> BECAUSE THIS CHALLENGE IS ONE-ON-ONE. I WON'T BE ADMITTING MANY people to avoid getting fatigue and losing focus. So, i will open the slots for this next <span class="text-red-700 innercounter-minute"> </span>. Then, it will be closed indefinitely. Get in now, if you don't want to miss out.
                         </p>
                         <p class="text-left py-5 leading-relaxed tracking-wider font-bold italic pop-font uppercase"><span class="text-red-700">PSS: </span> Don't start this challenge if you know you won't be checking your mails regularly cos the challenge instructions and assessment will come through mails.
                         </p>
@@ -371,9 +371,11 @@ window.onload = function () {
         displaySeconds2 = document.querySelector('.counter2 .seconds'),
         innerCounterMinute1 = document.querySelector('.counter1 .innercounter-minute'),
         innerCounterMinute2 = document.querySelector('.counter2 .innercounter-minute');
+        innerCounterMinute3 = document.querySelector('.counter3 .innercounter-minute');
 
     startSimpleCountdown(countdownDuration, displayMinutes1, displaySeconds1, 'timer1', innerCounterMinute1);
     startSimpleCountdown(countdownDuration, displayMinutes2, displaySeconds2, 'timer2', innerCounterMinute2);
+    startSimpleCountdown(countdownDuration, displayMinutes2, displaySeconds2, 'timer2', innerCounterMinute3);
 };
 
 </script>
